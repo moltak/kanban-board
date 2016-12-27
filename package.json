@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "webpack-dev-server --progress",
+    "start": "webpack-dev-server --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +19,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "marked": "^0.3.6",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   }

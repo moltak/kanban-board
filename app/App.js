@@ -13,7 +13,7 @@ let cardsList = [
     {
         id: 2,
         title: "Write some code",
-        description: "Code along with the samples in the book",
+        description: "Code along with the samples in the book. The complete source can be found at [github](https://github.com/moltak/kanban-board)",
         status: "todo",
         tasks: [
             {
