@@ -5,7 +5,8 @@
   "scripts": {
     "start": "webpack-dev-server --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/esw -w app/*.js"
+    "lint": "./node_modules/.bin/eslint app/*.js",
+    "lint:watch": "./node_modules/.bin/esw -w app/*.js"
   },
   "keywords": [],
   "author": "",
