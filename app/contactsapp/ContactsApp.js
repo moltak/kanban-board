@@ -18,7 +18,7 @@ class ContactsAppContainer extends Component {
             this.setState({contacts: r});
         })
         .catch((err) => {
-            console.log('Error fetching and parsing data', err);
+            console.error('Error fetching and parsing data', err);
         });
     }
 

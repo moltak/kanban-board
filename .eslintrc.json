@@ -33,6 +33,9 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "console": {
+            "allow": ["warn", "error"]
+        }
     }
 }

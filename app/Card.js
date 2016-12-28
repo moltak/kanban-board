@@ -31,7 +31,7 @@ class Card extends Component {
             cardDetails = (
                 <div className='card__details'>
                     <span dangerouslySetInnerHTML={{__html:marked(this.props.description)}}/>
-                    <CheckList cardId={this.props.id} tasks={this.props.tasks} />
+                    <CheckList taskCallbacks={this.props.taskCallbacks} cardId={this.props.id} tasks={this.props.tasks} />
                 </div>
             );
         }
@@ -49,7 +49,10 @@ class Card extends Component {
         return (
             <div className='card'>
                 <div style={sideColor} />
-                <div className={this.state.showDetails? 'card__title card__title--is--open' : 'card__title'} onClick={this.toggleDetails.bind(this)}>{this.props.title}</div>
+                <div 
+                    className={this.state.showDetails? 'card__title card__title--is--open' : 'card__title'} 
+                    onClick={this.toggleDetails.bind(this)}>{this.props.title}
+                </div>
                 {cardDetails}
             </div>
         );
@@ -61,7 +64,8 @@ Card.propTypes = {
     title: titlePropType,
     description: PropTypes.string,
     color: PropTypes.string,
-    tasks: PropTypes.arrayOf(PropTypes.object)
+    tasks: PropTypes.arrayOf(PropTypes.object),
+    taskCallbacks: PropTypes.object
 };
 
 export default Card;
