@@ -5,7 +5,7 @@ class Search extends Component {
     constructor() {
         super();
         this.state = {
-            searchTerm: "React"
+            searchTerm: 'React'
         };
     }
 
@@ -16,7 +16,7 @@ class Search extends Component {
     render() {
         return (
             <div>
-                Search Term: <input type="search" value={this.state.searchTerm} onChange={this.handleChange.bind(this)}/>
+                Search Term: <input type='search' value={this.state.searchTerm} onChange={this.handleChange.bind(this)}/>
             </div>
         );
     }
